@@ -1,0 +1,20 @@
+services:
+  registry-admin:
+    volumes:
+      - letsencrypt-certs:/certs
+    environment:
+      VIRTUAL_PORT: ${VIRTUAL_PORT:-80}
+      VIRTUAL_HOST: ${VIRTUAL_HOST}
+      LETSENCRYPT_HOST: ${LETSENCRYPT_HOST}
+      LETSENCRYPT_EMAIL: ${LETSENCRYPT_EMAIL}
+    networks:
+      - letsencrypt-network
+
+volumes:
+  letsencrypt-certs:
+    external: true
+
+networks:
+  letsencrypt-network:
+    name: letsencrypt-network
+    external: true

@@ -1,0 +1,8 @@
+services:
+  registry-admin:
+    networks:
+      - registry-admin-workspace-network
+
+networks:
+  registry-admin-workspace-network:
+    external: true

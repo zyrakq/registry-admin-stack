@@ -14,6 +14,8 @@ This project works with [distribution-stack](https://github.com/zyrakq/distribut
 
 Web interface and OIDC/SSO provider for Docker Distribution Registry. Provides user management, image catalog browsing, and authentication services.
 
+⚠️ **Access Control Limitations**: Despite advertised support for groups, roles, and permissions, registry-admin currently only provides individual image-level access control. There is no grouping of images, no ownership assignment, and no role-based access management. Access control is limited to granting/restricting individual users to specific already-uploaded images.
+
 ### 🔐 SSL Automation
 
 #### [🔒 Let's Encrypt Manager](src/ssl-automation/letsencrypt-manager)

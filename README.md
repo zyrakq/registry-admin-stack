@@ -2,6 +2,8 @@
 
 SSO and web interface for Docker Distribution Registry with support for multiple authentication methods and SSL automation.
 
+> **Acknowledgment**: This project is based on and extends the original [registry-admin](https://github.com/zebox/registry-admin) project by zebox. Many thanks to the original authors for their excellent foundation.
+
 ## 📦 Related Projects
 
 This project works with [distribution-stack](https://github.com/zyrakq/distribution-stack) which provides the Docker Distribution Registry itself. Registry Admin Stack must be deployed **after** distribution-stack.
